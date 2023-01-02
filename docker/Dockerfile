@@ -15,8 +15,8 @@ RUN   apt-get update && apt-get install -y \
       ros-${ROS_DISTRO}-cv-bridge \
       ros-${ROS_DISTRO}-image-transport \
       ros-${ROS_DISTRO}-message-filters \
-      ros-${ROS_DISTRO}-tf && \
-      ros-${ROS_DISTRO}-rviz && \
+      ros-${ROS_DISTRO}-tf  \
+      ros-${ROS_DISTRO}-rviz  \
       ros-${ROS_DISTRO}-pcl-ros &&\
       rm -rf /var/lib/apt/lists/* && \
       mkdir -p $CATKIN_WS/src/OKVIS/
